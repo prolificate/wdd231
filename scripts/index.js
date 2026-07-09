@@ -142,5 +142,5 @@ displayCourses(courses);
 
 
 // Footer
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
