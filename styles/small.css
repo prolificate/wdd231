@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: var(--backgroung);
+   
     color: var(--text);
 }
 
@@ -61,6 +61,7 @@ nav a{
 }
 
 nav a:hover{
+    background-color: var(--backgroung);
     background: rgba(255, 255, 255, 0.1);
     border: white;
 }
