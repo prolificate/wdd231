@@ -1,0 +1,187 @@
+:root{
+    --backgroung: #ffc0cb;
+    --cards: #9c3546;
+    --text: #2E2E2E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backgroung);
+    color: var(--text);
+}
+
+header{
+    background-color: var(--cards);
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav {
+display: none;
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+margin: 1rem;
+background-color: rgb(70, 64, 64);
+}
+
+nav.open{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    color: white;
+    padding: 5px;
+}
+
+
+nav a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: white;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    padding: 2px;
+}
+
+h2{
+    background-color: var(--cards);
+    color: white;
+}
+
+.about p{
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.photo img {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    background: #d6d6d6;
+    border-radius: 8px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.name{
+    font-size: 2rem;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: .75rem;
+    font-size: 1rem;
+    border: 1px solid #777;
+    border-radius: 8px;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-buttons button:hover {
+    background: #bbb;
+}
+
+section{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+img{
+    justify-content: center;
+}
+
+#course-container {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.course {
+    text-align: center;
+    padding: .8rem;
+    border: 1px solid #999;
+    font-weight: bold;
+    background: #d9d9d9;
+}
+
+.course.completed {
+    background: var(--cards);
+    color: white;
+    padding: 1rem;
+}
+
+.courses p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: var(--cards);
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.socials i{
+    font-size: 2rem;
+    color: var(--backgroung);
+    transition: .3s;
+}
+
+.socials i:hover{
+    color: var(--backgroung);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+footer p {
+    margin: .3rem 0;
+    font-size: .95rem;
+}
