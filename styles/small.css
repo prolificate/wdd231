@@ -75,8 +75,14 @@ nav a:hover{
 }
 
 h1{
-    color: white;
+    color: #9c3546;
     padding: 2px;
+}
+
+.h1{
+    color: white;
+    font-weight: 5rem;
+    font-size: 2rem;
 }
 
 h2{
