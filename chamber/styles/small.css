@@ -1,235 +1,257 @@
-:root{
+:root {
     --back: #003b6f;
-    --text: #ccc;
+    --text: #444;
+    --light: #f4f4f4;
+    --white: #ffffff;
 }
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background:#f4f4f4;
-    color:#222;
-    line-height:1.6;
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
 }
 
-.header{
-    display:flex;
-    justify-content: space-around;
-    padding:2rem;
-    background:#fff;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
-    position:relative;
-}
+/* HEADER */
 
-nav{
-    display: none;
-}
-
-nav.open{
-    display: block;
-}
-
-nav a{
-    text-decoration: none;
-    color:#222;
-    padding:1rem;
-    transition:.3s;
-}
-
-nav a:hover{
-    background:#003b6f;
-    color:white;
-}
-
-nav a.active{
-    background:#003b6f;
-    color:white;
-}
-
-.nav-icons{
-    display:flex;
+.header {
+    display: flex;
     justify-content: space-between;
-    gap:.5rem;
+    align-items: center;
+    background: var(--white);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
 
-.nav-icons button{
-    border:none;
-    background:none;
-    cursor:pointer;
-    font-size:1.3rem;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
 }
 
-.logo{
+.logo img {
+    border-radius: 50%;
+}
+
+.five {
+    font-size: 1.5rem;
+    color: var(--back);
+}
+
+/* NAVIGATION */
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    margin-top: 1rem;
+}
+
+nav.open {
     display: flex;
 }
 
-.five{
-    font-size: 1.7rem;
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
-.nav-icons{
-    display: block;
+nav a:hover,
+nav a.active {
+    background: var(--back);
+    color: white;
 }
 
-.hero img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
+.nav-icons {
+    display: flex;
+    gap: .5rem;
 }
 
-.overlay{
-    position:absolute;
-    inset:0;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:1.5rem;
+.nav-icons button {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
-.overlay h1{
-    font-size:1.8rem;
-    margin-bottom:.7rem;
+/* HERO */
+
+.hero {
+    position: relative;
 }
 
-.overlay p{
-    font-size:.9rem;
-    margin-bottom:1rem;
+.hero img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
 }
 
-.overlay button{
-    width:170px;
-    padding:.8rem;
-    border:none;
-    background:#0b4c7c;
-    color:white;
-    border-radius:6px;
-    cursor:pointer;
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+    color: white;
 }
 
-.overlay button:hover{
-    background:#06355a;
-}
-
-h2{
+.overlay h2 {
     font-size: 2rem;
 }
 
-.flex{
-    display: flex;
+.overlay p {
+    margin: 1rem 0;
+}
+
+.overlay button {
+    width: 180px;
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--back);
+    color: white;
+    cursor: pointer;
+}
+
+/* DIRECTORY */
+
+main h2 {
     margin: 1rem;
-    gap: 10px;
 }
 
-.flex button{
-    width: 100px;
-    padding: 5px;
+.flex {
     display: flex;
-    background-color: white;
-    border-radius: 6px;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.flex button:active{
-    background-color: var(--back);
+.flex button {
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
-.flex button:hover{
-    background-color: var(--back);
+.flex button:hover {
+    background: var(--back);
+    color: white;
 }
 
-.grid{
+/* GRID */
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    
-
-    .row{
-        border: 1px solid var(--text);
-        border-radius: 5px;
-        padding: 1rem;
-        box-shadow:0 2px 8px rgba(0,0,0,.1);
-        display: flex;
-        gap: 8px;
-    }
-
-    .row img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50px;
-    }
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
+
+.grid .card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.grid .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* LIST */
 
 .list {
-	display: flex;
-	flex-direction: column;
-
-	.card {
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
-
-		img {
-			display: none;
-		}
-
-		h3 {
-			font-size: 1rem;
-		}
-
-		&:nth-child(even) {
-			background-color: #bbb;
-		}
-	}
-}
-
-footer{
-    background-color: var(--back);
-    color: white;
-    padding: 1rem;
-    border-radius: 6px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 5px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-footer .logo{
+.list .card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    align-items: center;
+
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.list .card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--back);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     text-align: center;
+}
+
+footer .logo {
     justify-content: center;
 }
 
-footer .logo img{
-    width: 50px;
-    height: 50px;
-}
-
-.buttom{
+.socials {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.socials a{
-    gap: 10px;
+.socials a {
     color: white;
+    font-size: 1.4rem;
 }
+
+/* DARK MODE */
 
 .dark-mode {
-    background-color: #222;
+    background: #222;
     color: white;
 }
 
-.dark-mode header,
-.dark-mode footer {
-    background-color: #111;
-}
-
+.dark-mode .header,
+.dark-mode footer,
 .dark-mode .card {
-    background-color: #333;
+    background: #111;
     color: white;
 }
 
+.dark-mode nav {
+    background: #222;
+}
 
+.dark-mode nav a {
+    color: white;
+}
