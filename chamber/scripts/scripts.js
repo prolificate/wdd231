@@ -69,9 +69,3 @@ listButton.addEventListener("click", () => {
     membersContainer.classList.remove("grid");
 
 });
-
-document.querySelector("#year").textContent =
-new Date().getFullYear();
-
-document.querySelector("#lastModified").textContent =
-document.lastModified;
