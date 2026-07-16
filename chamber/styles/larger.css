@@ -5,7 +5,7 @@
     }
 
     nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         width: auto;
         margin-top: 0;
@@ -17,8 +17,13 @@
         border: none;
     }
 
-    .nav-icons {
+    #menuBtn{
         display: none;
+    }
+
+    .nav-icons {
+        display: flex;
+        text-align: center;
     }
 
     .grid {

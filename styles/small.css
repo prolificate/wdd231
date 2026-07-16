@@ -193,3 +193,13 @@ footer p {
     margin: .3rem 0;
     font-size: .95rem;
 }
+
+
+#menuBtn{
+    color: #222;
+    transition: color 0,3s ease;
+}
+
+.dark-mode #menuBtn{
+    color: white;
+}
