@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    nav{
+        display: block;
+    justify-content: center;
+    padding: 1rem;
+    }
+
+    nav a{
+        text-decoration: none;
+        color:#222;
+        padding:1rem;
+        transition:.3s;
+    }
+
+    nav a:hover{
+        background:#003b6f;
+        color:white;
+    }
+
+    nav a.active{
+        background:#003b6f;
+        color:white;
+    }
+
+    .nav-icons{
+    display: none;
+    }   
+
+    footer{
+    background-color: var(--back);
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    }
+
+    .buttom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials a{
+        gap: 10px;
+        color: white;
+    }
+
+    .border{
+        border-left: 1.5px solid black;
+        height: 5rem;
+    }
+}
