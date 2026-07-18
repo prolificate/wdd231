@@ -29,7 +29,6 @@ function displayMembers(members) {
         const card = document.createElement("section");
         card.classList.add("card");
 
-        // Membership text
         let membership = "";
 
         if (member.membership === 1) {

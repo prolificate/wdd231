@@ -5,7 +5,7 @@
         "phone": "+234 801 234 5678",
         "website": "https://www.lagostechsolutions.com",
         "image": "images/tech.webp",
-        "level": 3,
+        "membership": 3,
         "description": "IT services, software development, and business technology solutions."
     },
     {
@@ -14,7 +14,7 @@
         "phone": "+234 802 345 6789",
         "website": "https://www.ekofreshfarm.com",
         "image": "images/farm.webp",
-        "level": 2,
+        "membership": 2,
         "description": "Fresh agricultural products and food supply services."
     },
     {
@@ -23,7 +23,7 @@
         "phone": "+234 803 456 7890",
         "website": "https://www.victorianfashion.com",
         "image": "images/fashion.webp",
-        "level": 2,
+        "membership": 2,
         "description": "Custom tailoring, ready-to-wear fashion, and accessories."
     },
     {
@@ -32,7 +32,7 @@
         "phone": "+234 804 567 8901",
         "website": "https://www.nigeriaprinthub.com",
         "image": "images/print.webp",
-        "level": 1,
+        "membership": 1,
         "description": "Professional printing, branding, and graphic design services."
     },
     {
@@ -41,7 +41,7 @@
         "phone": "+234 805 678 9012",
         "website": "https://www.greenleafpharmacy.com",
         "image": "images/greenleaf-logo.webp",
-        "level": 3,
+        "membership": 3,
         "description": "Prescription medicines, healthcare products, and wellness advice."
     },
     {
@@ -50,7 +50,7 @@
         "phone": "+234 806 789 0123",
         "website": "https://www.blueoceantravels.com",
         "image": "images/blue.webp",
-        "level": 1,
+        "membership": 1,
         "description": "Travel planning, holiday packages, and visa assistance."
     },
     {
@@ -59,7 +59,7 @@
         "phone": "+234 807 890 1234",
         "website": "https://www.restaurantspot.com",
         "image": "images/taste.webp",
-        "level": 2,
+        "membership": 2,
         "description": "Local and international cuisine with dine-in and takeaway services."
     },
     {
@@ -68,7 +68,7 @@
         "phone": "+234 808 901 2345",
         "website": "https://www.cadburynigeria.com",
         "image": "images/cadbury.webp",
-        "level": 1,
+        "membership": 1,
         "description": "Manufacturing quality beverages, cocoa products, and confectioneries."
     },
     {
@@ -77,7 +77,7 @@
         "phone": "+234 809 012 3456",
         "website": "https://www.dangote.com",
         "image": "images/dangote.webp",
-        "level": 2,
+        "membership": 2,
         "description": "Leading manufacturer of cement, sugar, salt, and other industrial products."
     }
 ]

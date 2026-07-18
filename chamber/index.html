@@ -10,10 +10,10 @@
     <meta name="author" content="Afolabi Eniola">
 
     <meta property="og:title" content="Lagos Chamber of Commerce">
-    <meta property="og:description" content="Find and support businesses in Lagos.">
+    <meta property="og:description" content="Find and support businesses in Lagos through the Lagos Chamber of Commerce business directory.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://prolificate.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="images/business.webp">
+    <meta property="og:image" content="https://i.pinimg.com/736x/de/15/b6/de15b69eef8d8dd39a393460178e6c14.jpgq">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
                 height="75">
 
             <div class="top">
-                <h1 class="five">Lagos</h1>
+                <div class="five">Lagos</div>
                 <p>Chamber of Commerce</p>
             </div>
         </div>
@@ -65,7 +65,8 @@
         </div>
     </div>
     </header>
-    <section class="hero">
+    <main>
+        <section class="hero">
         <img src="images/hero.webp" alt="Lagos" loading="lazy">
         <div class="overlay">
             <h1>
@@ -123,8 +124,8 @@
             </h2>
             <div class="weather-content">
                 <i class="fa-solid fa-cloud-sun weather-icon"></i>
-                <h1>75°F</h1>
-                <p>Partly Cloudy</p>
+                <h3 id="temperature">°C</h3>
+                <p id="description"></p>
                 <div class="weather-info">
                     <span>High: 85°</span>
                     <span>Low: 52°</span>
@@ -188,6 +189,7 @@
             </div>
         </div>
     </section>
+    </main>
     <footer>
         <div class="logo">
         <img
@@ -230,4 +232,6 @@
     </div>
     </footer>
 </body>
+<i class="fa-solid fa-cloud-sun"></i> <h1></h1>
+<i class="fa-solid fa-cloud-sun weather-icon"></i>
 </html>
