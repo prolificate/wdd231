@@ -24,7 +24,7 @@ body {
     align-items: center;
     background: var(--white);
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    box-shadow: 0 2px 8px #0000001a;
 }
 
 .logo {
@@ -47,7 +47,7 @@ nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: white;
+    background: var(--white);
     margin-top: 1rem;
 }
 
@@ -65,7 +65,7 @@ nav a {
 nav a:hover,
 nav a.active {
     background: var(--back);
-    color: white;
+    color: var(--white);
 }
 
 .nav-icons {
@@ -93,14 +93,14 @@ nav a.active {
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.45);
+    background: #00000073;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     padding: 2rem;
-    color: white;
+    color: var(--white);
 }
 
 .overlay h2 {
@@ -117,7 +117,7 @@ nav a.active {
     border: none;
     border-radius: 5px;
     background: var(--back);
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ main h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background: white;
+    background: var(--white);
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -146,7 +146,7 @@ main h2 {
 
 .flex button:hover {
     background: var(--back);
-    color: white;
+    color: #ffffff;
 }
 
 .grid {
@@ -157,7 +157,7 @@ main h2 {
 }
 
 .grid .card {
-    background: white;
+    background: var(--white);
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
@@ -184,7 +184,7 @@ main h2 {
     gap: 1rem;
     align-items: center;
 
-    background: white;
+    background: var(--white);
     padding: 1rem;
     border-radius: 8px;
 }
@@ -198,7 +198,7 @@ main h2 {
 
 footer {
     background: var(--back);
-    color: white;
+    color: var(--white);
     padding: 2rem 1rem;
     margin-top: 2rem;
 
@@ -219,7 +219,7 @@ footer .logo {
 }
 
 .socials a {
-    color: white;
+    color: var(--white);
     font-size: 1.4rem;
 }
 
@@ -232,7 +232,7 @@ footer .logo {
 }
 
 .card{
-    background:white;
+    background:var(--white);
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 2px 8px rgba(0,0,0,.1);
@@ -240,14 +240,14 @@ footer .logo {
 
 .card h2{
     background:#003b6f;
-    color:white;
+    color:var(--white);
     padding:1rem;
     font-size:1rem;
 }
 
 .card-header{
     background:#003b6f;
-    color:white;
+    color:var(--white);
     padding:1rem;
     display:flex;
     justify-content:space-between;
@@ -255,7 +255,7 @@ footer .logo {
 }
 
 .card-header a{
-    color:white;
+    color:var(--white);
     text-decoration:none;
     font-size:.8rem;
 }
@@ -307,7 +307,7 @@ footer .logo {
 }
 
 .business-card{
-    background:white;
+    background:var(--white);
     border-radius:10px;
     box-shadow:0 2px 8px rgba(0,0,0,.1);
     padding:1rem;
@@ -334,14 +334,14 @@ footer .logo {
 
 .dark-mode {
     background: #222;
-    color: white;
+    color: var(--white);
 }
 
 .dark-mode .header,
 .dark-mode footer,
 .dark-mode .card {
     background: #111;
-    color: white;
+    color: var(--white);
 }
 
 .dark-mode nav {
@@ -349,5 +349,5 @@ footer .logo {
 }
 
 .dark-mode nav a {
-    color: white;
+    color: var(--white);
 }
