@@ -11,12 +11,10 @@ async function getMembers() {
         }
 
         const members = await response.json();
-
         displayMembers(members);
 
     } catch (error) {
         console.error(error);
-
         membersContainer.innerHTML =
             "<p>Unable to load directory information.</p>";
     }
@@ -31,38 +29,38 @@ function displayMembers(members) {
         const card = document.createElement("section");
         card.classList.add("card");
 
+        // Membership text
         let membership = "";
 
-        if (member.level == 1) {
+        if (member.membership === 1) {
             membership = "Member";
-        }
-        else if (member.level == 2) {
-            membership = "Silver";
-        }
-        else {
-            membership = "Gold";
+        } else if (member.membership === 2) {
+            membership = "Silver Member";
+        } else if (member.membership === 3) {
+            membership = "Gold Member";
         }
 
         card.innerHTML = `
-            <img src="${member.img}"
-                 alt="${member.name}"
+            <img src="${member.image}"
+                 alt="${member.name} logo"
                  loading="lazy">
 
             <h3>${member.name}</h3>
 
-            <p><strong>Address:</strong> ${member.address}</p>
+            <p>${member.description}</p>
 
-            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>📍 Address:</strong> ${member.address}</p>
+
+            <p><strong>📞 Phone:</strong> ${member.phone}</p>
 
             <p>
-                <a href="${member.url}" target="_blank">
+                <strong>🌐 Website:</strong>
+                <a href="${member.website}" target="_blank">
                     Visit Website
                 </a>
             </p>
 
-            <p><strong>Membership:</strong> ${membership}</p>
-
-            <p>${member.description}</p>
+            <p><strong>🏆 Membership:</strong> ${membership}</p>
         `;
 
         membersContainer.appendChild(card);
@@ -73,9 +71,6 @@ function displayMembers(members) {
 
 getMembers();
 
-
-// Grid/List Buttons
-
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
@@ -84,11 +79,17 @@ gridButton.addEventListener("click", () => {
     membersContainer.classList.add("grid");
     membersContainer.classList.remove("list");
 
+    gridButton.classList.add("active");
+    listButton.classList.remove("active");
+
 });
 
 listButton.addEventListener("click", () => {
 
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
+
+    listButton.classList.add("active");
+    gridButton.classList.remove("active");
 
 });
