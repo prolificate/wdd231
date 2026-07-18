@@ -39,6 +39,74 @@
         height: 150px;
     }
 
+    .info-container{
+        display:grid;
+        grid-template-columns:2fr 1fr 1fr;
+        gap:1.5rem;
+        padding:2rem 3rem;
+        align-items:start;
+    }
+
+    .event img{
+        width:90px;
+        height:90px;
+    }
+
+    .event-details h3{
+        font-size:1.1rem;
+    }
+
+    .weather-content{
+        padding:2rem;
+    }
+
+    .weather-icon{
+        font-size:5rem;
+    }
+
+    .weather-content h1{
+        font-size:3rem;
+    }
+
+    .forecast-item{
+        padding:1.2rem;
+    }
+
+    .business-section{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:2rem;
+        padding:0 3rem 3rem;
+    }
+
+    .business-card{
+        text-align:left;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        transition:.3s;
+    }
+
+    .business-card:hover{
+        transform:translateY(-8px);
+        box-shadow:0 10px 20px rgba(0,0,0,.2);
+    }
+
+    .business-card img{
+        width:120px;
+        height:120px;
+        margin-bottom:1rem;
+    }
+
+    .business-card h3{
+        margin-bottom:.5rem;
+        text-align:center;
+    }
+
+    .business-card p{
+        width:100%;
+    }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
