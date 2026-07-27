@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lagos Chamber of Commerce | Directory</title>
+    <title>Join our Lagos Chamber of Commerce | Sign up page</title>
 
     <meta name="description" content="Discover and support local businesses in Lagos through the Lagos Chamber of Commerce business directory.">
     <meta name="author" content="Afolabi Eniola">
@@ -98,7 +98,7 @@
                 <div class="second">
                     <div class="form-section">
                         <label   for="title">Organization Title* 
-                         <input type="text" name="title" id="title" autocomplete="organization-title" title="At least 7 letters" required placeholder="Enter Title">
+                         <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7}" title="At least 7 letters,space and hyphens" required placeholder="Enter Title">
                         </label>
                     </div>
                     <div class="form-section">
@@ -113,7 +113,7 @@
                    </div>
                     <div class="form-section">
                         <label for="name">Business/Organization Name*
-                         <input type="text" name="name" id="name" autocomplete="organization" required placeholder="Enter your organization name" title="Business name">
+                         <input type="text" name="name" id="name" autocomplete="organization" title="Business name" required placeholder="Enter your organization name">
                         </label>
                     </div>
                     <div class="form-section">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="form-section">
                         <label for="info">Business/Organization Description*
-                         <textarea name="info" id="info" rows="5"></textarea>
+                         <textarea name="info" id="info" rows="5" title="Organization Description"></textarea>
                         </label>
                     </div>
                     <input type="hidden" id="time" name="time">

@@ -562,3 +562,35 @@ dialog::backdrop{
 .dark-mode nav a {
     color: var(--white);
 }
+
+.dark-mode nav a:hover{
+    color: #4da3ff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode label,
+.dark-mode .five{
+    color: #e5e5e5;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+    background: #333;
+    color: var(--white);
+    border: 1px solid #888;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder{
+    color: #cccccc;
+}
+
+.dark-mode button{
+    background: #0b5ed7;
+    color: var(--white);
+}
+
