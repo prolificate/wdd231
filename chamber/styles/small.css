@@ -593,3 +593,7 @@ dialog::backdrop{
     color: var(--white);
 }
 
+.dark-mode dialog{
+    background-color: #222;
+    color: #e5e5e5;
+}
