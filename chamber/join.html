@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber of Commerce | Directory</title>
+
+    <meta name="description" content="Discover and support local businesses in Lagos through the Lagos Chamber of Commerce business directory.">
+    <meta name="author" content="Afolabi Eniola">
+
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:description" content="Find and support businesses in Lagos through the Lagos Chamber of Commerce business directory.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prolificate.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://i.pinimg.com/736x/de/15/b6/de15b69eef8d8dd39a393460178e6c14.jpgq">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+   <header>
+         <div class="header">
+        <div class="logo">
+            <img src="images/business.webp"
+                alt="Lagos Chamber of Commerce Logo"
+                width="75"
+                height="75">
+
+            <div class="top">
+                <div class="five">Lagos</div>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="#">About</a>
+            <a href="#">Podcast</a>
+            <a href="#">Events</a>
+        </nav>
+
+        <div class="nav-icons">
+            <button id="darkMode" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="menuBtn" aria-label="Open Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    </header>
+    <main>
+        <section class="hero">
+        <img src="images/hero.webp" alt="Lagos" loading="lazy">
+        <div class="overlay">
+            <h1>
+                Join the Chamber 
+            </h1>
+            <p>
+                Grow your business,connect qith professionals, <br>
+                and unlock exclusive opportunities.
+            </p>
+            <button>
+                Become a Member
+            </button>
+        </div>
+    </section>
+    <section class="main">
+        <h2>Join Today</h2>
+        <p>Complete the form below to become a maember</p>
+        <div class="form">
+            <form method="get" action="thankyou.html">
+                <div class="top">
+                    <label for="firstName">First Name* 
+                    <input type="text" name="firstName" id="firstName" autocomplete="given-name" required placeholder="Enter First name">
+                    </label>
+                    <label for="lastName">Last Name*
+                        <input type="text" name="lastName" id="firstName" autocomplete="family-name" required placeholder="Enter Last name">
+                    </label>
+                </div>
+                <div class="second">
+                    <div class="form-section">
+                        <label   for="title">Organization Title* 
+                         <input type="text" name="title" id="title" autocomplete="given-name" required placeholder="Enter Title">
+                        </label>
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Email* 
+                         <input type="email" name="email" id="email" autocomplete="off" required placeholder="name@gmail.com">
+                        </label>
+                    </div>
+                   <div class="form-section">
+                     <label for="phone">Mobile Number*
+                        <input type="text" name="phone" id="phone" autocomplete="tel" required placeholder="eg. 08012345678">
+                     </label>
+                   </div>
+                    <div class="form-section">
+                        <label for="name">Business/Organization Name*
+                         <input type="text" name="name" id="name" autocomplete="off" required placeholder="Enter your organization name">
+                        </label>
+                    </div>
+                    <div class="form-section">
+                        <label for="level">Membership Level*
+                          <select name="level" id="level" required>
+                            <option value="">Select Membership</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                          </select>
+                        </label>
+                    </div>
+                    <div class="form-section">
+                        <label for="info">Business/Organization Description*
+                         <textarea name="info" id="info" rows="5"></textarea>
+                        </label>
+                    </div>
+                    <input type="hidden" id="time" name="time">
+                    <input type="submit" class="submit" value="Join the Chamber">
+                </div>
+        </form>
+        </div>
+        <aside>
+            <div class="membership np">
+                <div class="circle1"></div>
+                <div>
+                    <h3>Np Membership</h3>
+                    <p>$0/ Free</p>
+                    <p>✔️Free for nonprofits.</p>
+                    <p>✔️Basic directory listing</p>
+                    <p>✔️Monthly newsletter</p>
+                </div>
+                <div><button id="npBtn">Learn More</button></div>
+            </div>
+            <div class="membership bronze">
+                <div class="circle2"></div>
+                <div>
+                    <h3>Bronze Membership silver</h3>
+                    <p>$25,000/ year</p>
+                    <p>✔️Great for small businesses.</p>
+                    <p>✔️Everything Np</p>
+                    <p>✔️Business Networking</p>
+                </div>
+                <div><button id="bronzeBtn">Learn More</button></div>
+            </div>
+            <div class="membership silver">
+                <div class="circle3"></div>
+                <div>
+                  <h3>Silver Membership</h3>
+                  <p>$50,000/ year</p>
+                  <p>✔️Includes additional exposures.</p>
+                  <p>✔️Training & Workshop</p>
+                  <p>✔️Homepage spotlight</p>
+                </div>
+                <div><button id="silverBtn">Learn More</button></div>
+            </div>
+            <div class="membership gold">
+                <div class="circle4"></div>
+                <div>
+                    <h3>Gold Membership</h3>
+                    <p>$100,000/ year</p>
+                    <p>✔️Premium membership package.</p>
+                    <p>✔️Premium advertising</p>
+                    <p>✔️VIP event access</p>
+                </div>
+                <div>
+                  <button id="goldBtn">Learn More</button>
+                </div>
+            </div>
+            <dialog id="npModal">
+                <h2>NP Membership</h2>
+                <p>✔️Free for nonprofits.</p>
+                <p>✔️Basic directory listing</p>
+                <p>✔️Monthly newsletter</p>
+                <button id="closeNp">Close</button>
+            </dialog>
+
+            <dialog id="bronzeModal">
+                <h2>NP Membership</h2>
+                <p>✔️Great for small businesses.</p>
+                <p>✔️Everything Np</p>
+                <p>✔️Business Networking</p>
+                <button id="closebronzer">Close</button>
+            </dialog>
+
+            <dialog id="silverModal">
+                <h2>NP Membership</h2>
+                <p>✔️Includes additional exposures.</p>
+                <p>✔️Training & Workshop</p>
+                <p>✔️Homepage spotlight</p>
+                <button id="closesilver">Close</button>
+            </dialog>
+
+            <dialog id="goldModal">
+                <h2>NP Membership</h2>
+                <p>✔️Premium membership package.</p>
+                <p>✔️Premium advertising</p>
+                <p>✔️VIP event access</p>
+                <button id="closegold">Close</button>
+            </dialog>
+        </aside>
+    </section>
+    </main>
+    <footer>
+        <div class="logo">
+        <img
+            src="images/business.webp"
+            alt="Lagos Chamber Logo"
+            width="50"
+            height="50">
+
+        <div class="top">
+
+            <h3>Lagos</h3>
+
+            <p>Chamber of Commerce</p>
+
+        </div>
+    </div>
+    <div class="buttom">
+        <p>Follow Us</p>
+        <div class="socials">
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://x.com" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+    <div class="border"></div>
+
+    <div class="date">
+        <p>WDD 231 Chamber Project</p>
+        <p>Eniola Afolabi</p>
+        <p>&copy; <span id="year"></span> Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+    </footer>
+</body>
+</html>

@@ -3,6 +3,10 @@
     --text: #444;
     --light: #f4f4f4;
     --white: #ffffff;
+    --np: #4a73df;
+    --bronze: peru;
+    --silver: silver;
+    --gold: gold;
 }
 
 * {
@@ -328,6 +332,210 @@ footer .logo {
 .business-card p{
     margin:.25rem 0;
     font-size:.9rem;
+}
+
+.main{
+    display: grid;
+    gap: 20px;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form{
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label, input{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea,select{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label{
+    font-weight: 5px;
+    color: black;
+}
+.circle1{
+    width: 50px;
+    height: 50px;
+    background-color: var(--np);
+    border-radius: 50px;
+}
+
+.np{
+    border-left: 6px solid var(--np);
+}
+
+.circle2{
+    width: 50px;
+    height: 50px;
+    background-color: var(--bronze);
+    border-radius: 50px;
+}
+
+.bronze{
+    border-left: 6px solid var(--bronze);
+}
+
+.circle3{
+    width: 50px;
+    height: 50px;
+    background-color: var(--silver);
+    border-radius: 50px;
+}
+
+.silver{
+    border-left: 6px solid var(--silver);
+}
+
+.circle4{
+    width: 50px;
+    height: 50px;
+    background-color: var(--gold);
+    border-radius: 50px;
+}
+
+.gold{
+    border-left: 6px solid var(--gold);
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.membership{
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    gap: 10px;
+    display: flex;  
+    transition: 3s;
+}
+
+.membership:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.membership button{
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--back);
+    color: var(--white);
+    margin-top: auto;
+    align-self: center;
+}
+
+.submit{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 8px;
+    background-color: var(--back);
+    color: var(--white);
+    padding: 5px;
+}
+
+.main h2{
+    position: relative;
+    margin-bottom: 2rem;
+    color: var(--back);
+}
+
+::placeholder{
+    color: #999;
+}
+
+main h2::after{
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: gold;
+    display: block;
+}
+
+dialog{
+    width: 400px;
+    padding: 2rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+dialog h2{
+    color: #12355B;
+    margin-bottom: 1rem;
+}
+
+dialog button{
+    margin-top: 1rem;
+    padding: 8rem 1.5rem;
+    background-color: #12355B;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+dialog::backdrop{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.thank-you{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+.thank-you-card{
+    width:min(600px,90%);
+    background:white;
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.thank-you-card h1{
+    color:#12355B;
+    margin-bottom:1rem;
+}
+
+.thank-you-card p{
+    margin:.8rem 0;
+}
+
+.home-btn{
+    display:inline-block;
+    margin-top:2rem;
+    padding:.8rem 1.5rem;
+    background:#12355B;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.home-btn:hover{
+    background:#0d2744;
 }
 
 /* DARK MODE */
