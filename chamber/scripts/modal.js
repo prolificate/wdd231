@@ -1,51 +1,47 @@
-const npmodal = document.querySelector("#npModal");
+const npModal = document.querySelector("#npModal");
 const npBtn = document.querySelector("#npBtn");
 const closeNp = document.querySelector("#closeNp");
 
-const bronzemodal = document.querySelector("#bronzeModal");
+const bronzeModal = document.querySelector("#bronzeModal");
 const bronzeBtn = document.querySelector("#bronzeBtn");
 const closeBronze = document.querySelector("#closeBronze");
-bronzemodal.showModal();
 
-
-const silvermodal = document.querySelector("#silverModal");
+const silverModal = document.querySelector("#silverModal");
 const silverBtn = document.querySelector("#silverBtn");
 const closeSilver = document.querySelector("#closeSilver");
 
-
-const goldmodal = document.querySelector("#goldModal");
+const goldModal = document.querySelector("#goldModal");
 const goldBtn = document.querySelector("#goldBtn");
 const closeGold = document.querySelector("#closeGold");
 
+npBtn.addEventListener("click", () => {
+    npModal.showModal();
+});
 
-npmodal.addEventListener("click", ()=> {
-    npmodal.showModal();
-})
+closeNp.addEventListener("click", () => {
+    npModal.close();
+});
 
-closeNp.addEventListener("click", ()=>{
-    npmodal.close();
-})
+bronzeBtn.addEventListener("click", () => {
+    bronzeModal.showModal();
+});
 
-bronzemodal.addEventListener("click", ()=> {
-    bronzemodal.showModal();
-})
+closeBronze.addEventListener("click", () => {
+    bronzeModal.close();
+});
 
-closeBronze.addEventListener("click", ()=>{
-    bronzemodal.close();
-})
+silverBtn.addEventListener("click", () => {
+    silverModal.showModal();
+});
 
-silvermodal.addEventListener("click", ()=> {
-    silvermodal.showModal();
-})
+closeSilver.addEventListener("click", () => {
+    silverModal.close();
+});
 
-closeSilver.addEventListener("click", ()=>{
-    silvermodal.close();
-})
+goldBtn.addEventListener("click", () => {
+    goldModal.showModal();
+});
 
-goldmodal.addEventListener("click", ()=> {
-    goldmodal.showModal();
-})
-
-closeGold.addEventListener("click", ()=>{
-    goldmodal.close();
-})
+closeGold.addEventListener("click", () => {
+    goldModal.close();
+});
