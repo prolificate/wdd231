@@ -92,6 +92,7 @@ nav a.active {
     width: 100%;
     height: 320px;
     object-fit: cover;
+    display: block;
 }
 
 .overlay {
@@ -540,6 +541,50 @@ dialog::backdrop{
     background:#0d2744;
 }
 
+.last{
+    min-width: 1200px;
+}
+
+.discover{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.info{
+    background: #fff;
+    border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, .15); 
+   transition: .3s ease;
+}
+
+.info img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.infoContent{
+    padding: 1rem;
+}
+
+.info h2{
+    margin-bottom: .5rem;
+}
+
+info p{
+    line-height: 1.5;
+}
+
+.info button{
+    margin-top: 1rem;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
 /* DARK MODE */
 
 .dark-mode {
@@ -596,4 +641,9 @@ dialog::backdrop{
 .dark-mode dialog{
     background-color: #222;
     color: #e5e5e5;
+}
+
+.dark-mode .home p,
+.dark-mode .home h3{
+    color: #111;
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media (min-width: 1025px) {
 
     .header {
         padding: 1rem 2rem;
@@ -133,5 +133,28 @@
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
         align-items: start;
+    }
+
+    .discover{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+    .info:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .info img:hover{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+}
+
+@media (min-width: 768px){
+    .discover{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
