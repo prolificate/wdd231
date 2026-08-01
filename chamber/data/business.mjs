@@ -18,39 +18,39 @@ export const business = [
         description : "Famous for bottling drinls in Nigeria and in Africa."
     },
      {
-        name: "Dangote Plc",
+        name: "Lagos Farming Associates",
         images : "images/farm.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "Nigeria's farming industry."
     },
      {
-        name: "Dangote Plc",
+        name: "Print Plc",
         images : "images/print.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "Nigeria Pinting Hub."
     },
      {
-        name: "Dangote Plc",
+        name: "Big Tech",
         images : "images/tech.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "Nigeria's Technologies."
     },
      {
-        name: "Dangote Plc",
+        name: "Greenleaf Pharmacy",
         images : "images/Greenleaf-logo.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "Nigeria's Pharmacuecal Industry.."
     },
      {
-        name: "Dangote Plc",
+        name: "Taste of Lagos",
         images : "images/taste.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "One of Lagos most popular Resturant."
     },
     {
-        name: "Dangote Plc",
+        name: "High Fashion",
         images : "images/fashion.webp",
         address : "Lagos Nigeria",
-        description : "One of Africa biggest conglomerates."
+        description : "Lagos Fashion week exhibitions.."
     },
 ]
